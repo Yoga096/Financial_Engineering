@@ -3,4 +3,4 @@
 陳又加｜經濟三｜B06303096
 
 # 流程圖
-[Imgur](https://i.imgur.com/NoVNW6P.png)
+![](https://i.imgur.com/NoVNW6P.png)
