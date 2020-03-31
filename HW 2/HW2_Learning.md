@@ -17,7 +17,7 @@
 後來將調整幅度改為0.000001，雖然程式運作時間較久但得出的數字與參考網站相符合。
 
 ## 運作結果
-![](https://i.imgur.com/LIRQaJm.png)
+![](https://i.imgur.com/lQN2Hn5.png)
 
 # Spot rate
 ## 參考 :<br>
