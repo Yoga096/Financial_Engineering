@@ -10,11 +10,16 @@ def PV_new(FV, coupon, n, CR):
 
 PV = float(input("Current Bond Price :"))
 FV = float(input("Bond Par Value :"))
-CR = float(input("Bond Coupon Rate (% p.a.) :"))
+CR = float(input("Bond Coupon Rate (% p.a.) :")) * 0.01
 Y = int(input("Years to Maturity :"))
-p = int(input("Payment  \n1 (Annually) \n2 (Semi-annually) \n4 (Quartely) :"))   
 
-CR = CR * 0.01
+print("Payment : \n1. Annually \n2. Semi-annually \n3. Quartely :")
+p = int(input())   
+if p == 1 | p == 2 :
+    pass
+elif p == 3 :
+    p = 4
+
 n = Y * p         
 coupon = FV * CR
 ytm = CR
@@ -34,4 +39,7 @@ while condition == True :
     else :
         condition = PV_now < PV
 
+if ytm < 0 :
+    ytm = 0.0
+    
 print("YTM : %.4f%%" % ((ytm / p) * 100.0))
