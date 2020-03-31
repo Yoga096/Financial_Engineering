@@ -19,13 +19,16 @@
 ## 運作結果
 ![](https://i.imgur.com/lQN2Hn5.png)
 
-# Spot rate
+# Spot rate & Forward rate
 ## 參考 :<br>
 1. https://www.trignosource.com/finance/spot%20rate.html#Calculator
+2. https://www.trignosource.com/finance/Forward%20rate.html#Calculator
 
-# Forward rate
-## 參考 :<br>
-1. https://www.trignosource.com/finance/Forward%20rate.html#Calculator
+## 流程圖
+![](https://i.imgur.com/bqPs3FA.png)
+
+## 運作結果
+![](https://i.imgur.com/JWzOxbB.png)
 
 # Forward table
 ## 流程圖
