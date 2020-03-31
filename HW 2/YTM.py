@@ -13,7 +13,7 @@ FV = float(input("Bond Par Value :"))
 CR = float(input("Bond Coupon Rate (% p.a.) :")) * 0.01
 Y = int(input("Years to Maturity :"))
 
-print("Payment : \n1. Annually \n2. Semi-annually \n3. Quartely :")
+print("Payment : \n1. Annually \n2. Semi-annually \n3. Quartely ")
 p = int(input())   
 if p == 1 | p == 2 :
     pass
