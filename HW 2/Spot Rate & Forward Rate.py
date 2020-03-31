@@ -32,15 +32,16 @@ print(r, "year forward force of interest beginning", t, "years from noe :", "%.2
 
 ### forward rate table
 
+rt = r + t
 price_all = []
-for i in range(r + t + 1) :
+for i in range(rt + 1) :
     print("Price of", i, "th years : ")
     price_all.append(float(input()))
 
 Forward = []
-for i in range(r + t + 1) :
+for i in range(rt + 1) :
     x = []
-    for j in range(r + t + 1) :
+    for j in range(rt + 1) :
         if j < i : x.append("-") 
         elif j == i : x.append(0)
         else :
