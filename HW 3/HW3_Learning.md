@@ -16,7 +16,7 @@
 
 
 ## 程式碼及運作結果
-### Stock price tree
+### Stock Price
 ```py
 import pandas as pd
 import math
@@ -42,3 +42,55 @@ for i in range(n + 1) :
 ```
 ![](https://i.imgur.com/uapwPhP.png)
 
+### Probolity
+```py
+prob = [[1.0], [p, round(1-p, 3)]] 
+for i in range(2, n + 1) :
+    prob.append([])
+    for j in range(1) :
+        prob[i].append(round(p ** i, 3))
+    for j in range(1, i) :
+        prob[i].append(round((prob[i-1][j-1] * (1-p)) + (prob[i-1][j] * p), 3))
+    for j in range(i, i+1) :
+        prob[i].append(round((1-p) ** i, 3))
+```
+![](https://i.imgur.com/ffrP54y.png)
+
+### Call and Put Price
+```py
+### 計算 call price tree
+c = [] 
+for i in range(n + 1) :
+    c.append([])
+    for j in range(i + 1) :
+        if s[i][j] - X >= 0 :
+            c[i].append(s[i][j] - X)
+        else :
+            c[i].append(0.0)
+
+for i in range(n-1, -1, -1) :
+    for j in range(i + 1) :
+        c[i][j] = round((p * c[i+1][j+1] + (1-p) * c[i+1][j])/R, 3)
+
+c = pd.DataFrame(c)
+call_price = c.T
+
+
+### 計算 put price tree
+put = [] 
+for i in range(n + 1) :
+    put.append([])
+    for j in range(i + 1) :
+        if X - s[i][j] >= 0 :
+            put[i].append(X - s[i][j])
+        else :
+            put[i].append(0)
+
+for i in range(n-1, -1, -1) :
+    for j in range(i + 1) :
+        put[i][j] = round(((p) * put[i+1][j+1] + (1-p) * put[i+1][j])/R, 3)
+
+put = pd.DataFrame(put)
+put_price = put.T
+```
+![](https://i.imgur.com/4Vbf40V.png)
