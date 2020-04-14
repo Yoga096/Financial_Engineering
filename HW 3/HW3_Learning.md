@@ -18,7 +18,7 @@
 ## 程式碼及運作結果
 ![](https://i.imgur.com/FuSoUXU.png)
 ### Stock price tree
-```
+```py
 import pandas as pd
 import math
 
