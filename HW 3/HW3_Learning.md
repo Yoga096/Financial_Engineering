@@ -16,7 +16,6 @@
 
 
 ## 程式碼及運作結果
-![](https://i.imgur.com/FuSoUXU.png)
 ### Stock price tree
 ```py
 import pandas as pd
@@ -41,4 +40,5 @@ for i in range(n + 1) :
         SP = S * (u ** j) * (d ** (i-j))
         s[i].append(SP)
 ```
+![](https://i.imgur.com/uapwPhP.png)
 
