@@ -42,7 +42,7 @@ for i in range(n + 1) :
 ```
 ![](https://i.imgur.com/uapwPhP.png)
 
-### Probolity
+### Probability
 ```py
 prob = [[1.0], [p, round(1-p, 3)]] 
 for i in range(2, n + 1) :
