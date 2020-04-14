@@ -4,7 +4,7 @@
 
 ## Binomial Pricing Model
 ### 參考課程投影片及 https://ch-hsieh.blogspot.com/2014/04/binomial-pricing-model-1.html
-考慮市場為無套利機會(No-Arbitrage opportunity)的市場， <br>
+>考慮市場為無套利機會(No-Arbitrage opportunity)的市場， <br>
 則我們可以建構一組能產生與選擇權相同的 payoff 的投資組合。 <br>
 因為既然 payoff 相同則其價值必須相同(由無套利機會假設兩者等價)， <br>
 故此我們便可計算選擇權的(合理)價格。
