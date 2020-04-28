@@ -18,8 +18,7 @@
 5. 不存在無風險套利機會 
 
 ### 使用公式
-先從股票目前價格扣除發放股利的現值
-再將除息後的現值代入公式計算call price及 put price
+先從股票目前價格扣除發放股利的現值，再將除息後的現值代入公式計算call price及 put price。
 ![](https://i.imgur.com/s5SrYcm.png)
 
 ## 流程圖
