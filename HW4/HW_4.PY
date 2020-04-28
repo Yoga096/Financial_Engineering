@@ -22,8 +22,8 @@ S_ExD = S - dividend_value
 d1 = (math.log(S_ExD /X) + (r + (A**2)/2) * maturity) / (A * (maturity**0.5))
 d2 = d1 - (A * (maturity**0.5))
 
-p = X * (math.exp(-r * maturity)) * norm.cdf(-d2) - S_ExD * norm.cdf(-d1)
 c = S_ExD * norm.cdf(d1) - X * math.exp(-r * maturity) * norm.cdf(d2)
+p = X * (math.exp(-r * maturity)) * norm.cdf(-d2) - S_ExD * norm.cdf(-d1)
 
-print("put price : %.3f" %p)
 print("call price : %.3f" %c)
+print("put price : %.3f" %p)
