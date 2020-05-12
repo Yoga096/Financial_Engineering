@@ -78,7 +78,6 @@ print("PayOff :", payoff)
 
 
 
-
 ## 對所有 Path 的 PayOff 進行期望值計算，並折現回 t=0 的時間點
 ## 計算出 Call Price & Put Price
 c = []
