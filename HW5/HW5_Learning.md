@@ -6,6 +6,7 @@
 ![](https://i.imgur.com/5TOPmnS.png)
 
 ## 流程圖
+![](https://i.imgur.com/t1B3oGu.png)
 
 ## 程式碼及運作結果
 ### code
